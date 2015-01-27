@@ -1,0 +1,42 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration:none;
+}
+
+fieldset {
+  border:none;
+}
+
+.entry {
+  text-indent:10px;
+}
+
+.entrysub {
+  text-indent:20px;
+}
+
+.delstacklink {
+  font-size:12px
+}
+
+.stack {
+  display:inline;
+  padding-right:10px;
+}
+
+.red {
+  color:red;
+}
+
+.green {
+  color:green;
+}
+
+.undefined {
+  color:black;
+}

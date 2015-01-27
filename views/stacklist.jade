@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= title
+  fieldset#newStack
+    select#color
+      option(value="red") Red
+      option(value="blue") Blue
+      option(value="green") Green
+      option(value="black") Black
+    input#name(type='text', placeholder='Name')
+    button#btnNewStack New Stack
+  #stackList
+    each stack in stacks
+      a(href='/stacks/#{stack.id}')
+        h2(class="#{stack.color}").stack= stack.name
+      a(href="#" class="delstacklink" rel="#{stack.id}") delete
+      br  
+
+  script(src='/javascripts/stacklist.js')
